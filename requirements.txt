@@ -1,0 +1,2 @@
+hello-world @ file:///Users/gary/myapps/python-project-structure
+python-project-structure @ file:///Users/gary/myapps/python-project-structure
