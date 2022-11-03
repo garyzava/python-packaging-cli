@@ -18,6 +18,7 @@ For Windows
 Packages are meant for reusability. A python distribution is a versioned file that contains Python pacakges. There are two primary distribution types in use today: i) Source Distributions (sdist) which only contains the source code; and ii) Wheel/Built Distributions (bdist) actually "builds" the package. It is best practice to upload both, wheels and a source distribution, because any built distribution format only works for a subset of target systems.
 
 ```python
+$ pip install wheel
 $ python setup.py sdist bdist_wheel
 ```
 
