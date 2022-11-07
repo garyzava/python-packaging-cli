@@ -1,4 +1,4 @@
-# Python Packaging & Project Structure
+# Python Packaging & CLI
 This is an example project demostrating a common Directory structure for your Python projects and packaging it using setuptools.
 
 ## Overview
