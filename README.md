@@ -15,10 +15,18 @@ VENV comes out-of-the-box with Python, hence there is no need to install externa
 
 For Linux
 ```
+$ python -m venv venv
+$ source venv/bin/activate
+(venv) $
 ```
 
 For Windows
 ```
+PS> python -m venv venv
+PS> venv\Scripts\activate
+(venv) PS>
+
+(venv) PS> deactivate
 ```
 
 ## Setup.py For Humans
@@ -45,13 +53,13 @@ $ python setup.py sdist bdist_wheel
 ### Requirements.txt
 Maintening dependencies in the requirements.txt file is widely used and often recommended for apps deployed on machines you control. The existing project has the requirements.txt and make the setup.py use of it. 
 
-## Installation
-Run the following to install:
-
+Run the following to generate the requirements file:
 ```python
-pip install hellworld
+$ pip freeze > requirements.txt
 ```
-or run pip install, do not use install setup.py.
+
+## Installation
+Run pip install to install the project, do not use install setup.py.
 ```python
 pip install .
 ```
@@ -84,7 +92,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ## CLI
 ```
-(venv) λ hello-world-dist-cli
+(venv) $ hello-world-dist-cli
 Hola Mundo!
 ```
 
